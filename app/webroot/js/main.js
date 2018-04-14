@@ -38,7 +38,7 @@ libFour.on('click', function() {
 
 // Add custom lib field
 addCustomLibBtn.on('click', function() {
-  var newElementTemplate = '<div class="full-width checkbox-item custom-lib"><label for="passwd-lib-custom-lib" class="passwd-label-libs">Własny słownik</label><input type="checkbox" name="passwd-lib-custom-lib" class="passwd-checkbox" checked><div class="full-width"><input type="text" name="custom-lib-input" class="passwd-custom-lib-input-text"><div class="full-width"><span class="remove-custom-lib-btn">-</span></div>';
+  var newElementTemplate = '<div class="full-width checkbox-item custom-lib"><label for="passwd-lib-custom-lib" class="passwd-label-libs">Własny słownik</label><input type="checkbox" name="passwd-lib-custom-lib" class="passwd-checkbox" checked><div class="full-width"><input type="text" name="custom-lib-input" class="passwd-custom-lib-input-text"><div class="full-width text-right"><span class="remove-custom-lib-btn">-</span></div>';
   customLibArea.append(newElementTemplate);
   // Remove custom lib btn
   var removeCustomLibBtn = genBox.find('.remove-custom-lib-btn');
