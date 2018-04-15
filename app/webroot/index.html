@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>PasswdGen - v1</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body class="body-class">
+
+<div class="main-page-content">
+  <div class="passwd-generator-box">
+    <div class="content-container">
+      <div class="column-2">
+        <label for="passwd-input" class="passwd-label">Wygenerowane hasło:</label>
+        <input type="text" name="passwd-input" class="passwd-input" placeholder="Password">
+        <div class="div-flex">
+          <span class="passwd-submit main-btn-v1">Generuj</span>
+          <div class="passwd-number-container">
+            <label for="passwd-char-number" class="passwd-label-libs">Długość hasła:</label>
+            <input type="number" name="passwd-char-number" class="passwd-char-number" min="1" value="11">
+          </div>
+        </div>
+      </div>
+      <div class="column-2">
+        <span class="passwd-label">Słowniki:</span>
+        <div class="checkbox-item">
+          <label for="passwd-lib-capital-letters" class="passwd-label-libs">[A-Z]</label><input type="checkbox" name="passwd-lib-capital-letters" class="passwd-checkbox" checked>
+        </div>
+        <div class="checkbox-item">
+          <label for="passwd-lib-small-letters" class="passwd-label-libs">[a-z]</label><input type="checkbox" name="passwd-lib-small-letters" class="passwd-checkbox" checked>
+        </div>
+        <div class="checkbox-item">
+          <label for="passwd-lib-numbers" class="passwd-label-libs">[0-9]</label><input type="checkbox" name="passwd-lib-numbers" class="passwd-checkbox" checked>
+        </div>
+        <div class="checkbox-item">
+          <label for="passwd-lib-special-characters" class="passwd-label-libs">Special characters</label><input type="checkbox" name="passwd-lib-special-characters" class="passwd-checkbox" checked>
+          <div class="checkbox-item-additional-info special-chars-additional-info">
+            <label for="passwd-lib-special-characters" class="passwd-label-libs-additional-info">Minimalna ilość specjalnych znaków:</label><input type="number" name="passwd-lib-special-characters-quantity" class="passwd-special-char-number" min="1" value="3">
+          </div>
+        </div>
+        <div class="checkbox-item add-custom-lib-box">
+          <span class="passwd-label-libs">Dodaj swój słownik</span>
+          <span class="add-own-lib-btn">+</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+<script src="js/vendors/jquery-3.3.1.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

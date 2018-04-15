@@ -1,4 +1,3 @@
 /node_modules
 /app/webroot/css
-/app/webroot/*.html
 /app/webroot/fonts/*
